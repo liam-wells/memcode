@@ -1,16 +1,16 @@
 $purple: rgb(170, 160, 247);
 // $purple: rgb(160, 187, 247);
 $blue: rgb(21, 23, 58);
-$orange: rgba(250, 100, 0, 0.84);
+$orange: rgba(251, 176, 59, 255);
 
 $green: rgb(56, 190, 155);
 
-$body-font: 'Roboto';
-$heading-font: 'Roboto';
+$body-font: 'Open Sans';
+$heading-font: 'Open Sans';
 
-$color-main-1: rgb(15, 17, 34); // header
-$color-main-2: rgb(15, 17, 34); // bg
-$color-main-3: rgb(24, 27, 57); // course
+$color-main-1: rgb(251, 174, 60); // header
+$color-main-2: rgb(255, 255, 255); // bg
+$color-main-3: rgb(255, 255, 255); // course
 $faint-blue: rgb(53, 65, 105);
 $not-so-faint-blue: rgb(90, 102, 141);
 
@@ -40,4 +40,4 @@ $test-drive-button-color: rgb(236, 236, 133);
 //   display: none;
 // }
 
-$body-color: white;
+$body-color: rgb(0, 0, 0);

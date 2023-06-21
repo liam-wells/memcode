@@ -56,7 +56,7 @@
     background: $orange;
     &:hover{
       transition: background 60ms ease-in-out;
-      background: rgba(250, 100, 0, 0.9);
+      background: rgba(252, 190, 99, 255);
     }
   }
   &.-orange-o{
@@ -64,7 +64,7 @@
     border: 2px solid $orange;
     &:hover{
       transition: border 60ms ease-in-out;
-      border: 2px solid rgb(250, 100, 0);
+      border: 2px solid rgba(252, 190, 99, 255);
     }
   }
 
@@ -136,12 +136,4 @@
   transition: opacity 60ms ease-in-out;
   opacity: 0.85;
   &:hover{ opacity: 1; }
-}
-
-.-move-up-on-hover{
-  transform: translateY(0px);
-  transition: transform 60ms ease-in-out;
-  &:hover{
-    transform: translateY(-1px);
-  }
 }

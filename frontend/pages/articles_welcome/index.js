@@ -37,7 +37,6 @@ class Page_articles_welcome extends React.Component {
 
   render = () =>
     <Main className={css.main}>
-      <a className="github-ribbon" target="_blank" rel="noopener noreferrer" href="https://github.com/lakesare/memcode">★ Star on GitHub</a>
       <article className="standard-article-formatting">
         <div className="container">
           <section className="article-headings">
@@ -55,59 +54,6 @@ class Page_articles_welcome extends React.Component {
 
             <Link to="/courses/new" className="button -orange -move-up-on-hover -with-radius" type="button">Use for Free, Forever →</Link>
             {/* <hr/> */}
-          </section>
-
-          <section className="article-section features">
-            <ul className="feature-list">
-              {this.renderFeature(
-                'Bold text, code, formulas',
-                <>LaTeX formulas, code highlighting, images in your flashcards.</>,
-                <i className="material-icons">code</i>,
-                'formulas'
-              )}
-              {this.renderFeature(
-                'Shortcuts',
-                <>You can navigate Memcode via shortcuts and tabs.</>,
-                <i className="fa fa-keyboard-o"/>,
-                'shortcuts'
-              )}
-              {this.renderFeature(
-                'Smooth course creation',
-                'Course creators are first class citizens on Memcode.',
-                <span className="material-icons">dynamic_feed</span>,
-                'creations'
-              )}
-              {this.renderFeature(
-                'Comfortable',
-                'We\'re really trying. Software like this tends to become a part of your brain, and we want you to feel like returning to Memcode.',
-                <span className="material-icons">bathtube</span>,
-                'comfortable'
-              )}
-              {this.renderFeature(
-                'Open Source',
-                <>Check us out on <a target="blank" href="https://github.com/lakesare/memcode">Github</a>!</>,
-                <i className="fa fa-code-fork"/>,
-                'open-source'
-              )}
-              {this.renderFeature(
-                'SM2 algorithm',
-                'Custom, honed SM2 algorithm.',
-                <span className="material-icons">linear_scale</span>,
-                'algorithm'
-              )}
-              {this.renderFeature(
-                'We love gif',
-                'One of the only sites with the gifs allowed!',
-                <span className="material-icons">favorite</span>,
-                'gifs'
-              )}
-              {this.renderFeature(
-                'Forever free',
-                'We won\'t charge. Not at any point.',
-                <span className="material-icons">insert_emoticon</span>,
-                'free'
-              )}
-            </ul>
           </section>
 
           <section className="article-section two-types-of-flashcards">

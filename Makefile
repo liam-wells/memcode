@@ -15,7 +15,7 @@ frontend-webpack:
 db-drop:
 	psql -U postgres -c 'DROP DATABASE IF EXISTS memcode'
 db-reset:
-	# 'database=' here is a variable used in schema.sql (-v).
+# 'database=' here is a variable used in schema.sql (-v).
 	psql -v database=memcode -U postgres -f backend/db/schema.sql
 db-migrate:
 	psql -v database=memcode -U postgres -f backend/db/migrations/14.sql

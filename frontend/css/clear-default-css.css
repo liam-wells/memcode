@@ -50,15 +50,18 @@ a{
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  color: $body-color;
 }
 label{
   font-weight: 300;
+  color: $body-color
 }
 h1, h2, h3, h4, h5, h6{
   margin-top: 0; margin-bottom: 0;
   font-weight: 300;
   letter-spacing: 0.3px;
   font-family: $heading-font;
+  color: $body-color
 }
 // only use these
 h1{ font-size: 25px; }
@@ -84,6 +87,8 @@ input, textarea, select, button{
   // because font defaults to system despite body style
   font-family: $body-font;
   font-weight: 300;
+  color: $body-color;
+  
 
   background: none;
   padding: 0;
