@@ -8,8 +8,8 @@
 
   font-size: 15px;
 
-  font-family: 'Open Sans';
-  color: rgb(219, 222, 249);
+  font-family: 'Noto Sans', sans-serif;
+  color: $black;
   font-weight: 100;
 
   // standard elements

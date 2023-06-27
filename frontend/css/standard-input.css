@@ -4,7 +4,7 @@
   width: 100%;
   padding: 10px 20px;
   background: $color-main-3;
-  color: white;
+  color: black;
   font-size: 15px;
   border-radius: 2px;
   &::placeholder{
@@ -39,7 +39,7 @@
       align-items: center;
 
       i.fa-caret-down{
-        color: $purple;
+        color: $orange;
         padding-left: 10px;
       }
       @extend .extendable-pretty-input;

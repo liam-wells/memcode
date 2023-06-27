@@ -3,19 +3,22 @@
 // .tippy-box[data-theme='-bright'] is needed for vanilla tippy.js (e.g. in Quill toolbar)
 .standard-tooltip, .tippy-box{
   max-width: none !important;
+  color: black;
   &.-bright, &[data-theme='-bright']{
-    background-color: rgb(24, 28, 57);
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
 
     .tippy-arrow{
-      color: rgb(24, 28, 57);
+      color: white;
     }
   }
 
   &.-dark, &[data-theme='-dark']{
-    background-color: rgb(33, 36, 73);
+    background-color: white;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
 
     .tippy-arrow{
-      color: rgb(33, 36, 73);
+      color: white;
     }
   }
 

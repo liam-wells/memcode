@@ -51,7 +51,7 @@ main{
   // }
 
   .ProblemBeingSolved .problem, header{
-    background: rgba(247, 247, 253, 0.04) !important;
+    background: $color-main-1 !important;
   }
   .ProblemBeingSolved .problem{    
     @media(max-width: 900px){
@@ -59,10 +59,11 @@ main{
     }
   }
 
+  // card background
   section.problem .ql-editor, .ql-toolbar, .see-answer-button{
-    background: #22264ac2;
+    background: white
     &:focus{
-      background: #22264aed;
+      background: whitesmoke;
     }
   }
 }

@@ -7,8 +7,6 @@ import Courses from './components/Courses';
 
 import NewProblem from '~/pages/courses_id/components/NewProblem';
 
-import heartImage from './images/heart.png';
-
 import css from './index.css';
 
 class Page_articles_welcome extends React.Component {
@@ -24,10 +22,6 @@ class Page_articles_welcome extends React.Component {
 
   renderFeature = (heading, comment, image, className) =>
     <div className={`feature-box ${className}`}>
-      <div className="image">
-        {image}
-        {/* <img src={heartImage} alt="heart"/> */}
-      </div>
 
       <div className="text">
         <h5>{heading}</h5>
@@ -40,8 +34,7 @@ class Page_articles_welcome extends React.Component {
       <article className="standard-article-formatting">
         <div className="container">
           <section className="article-headings">
-
-            <h1 className="-glow">Welcome to Memcode</h1>
+            <h1 className="title">Welcome to Coto Cards</h1>
             <h2 className="subtitle">Memorizing is hard. Let's make everything else easy.</h2>
 
             <h2 className="more">
@@ -57,7 +50,7 @@ class Page_articles_welcome extends React.Component {
           </section>
 
           <section className="article-section two-types-of-flashcards">
-            {this.renderHeading('Two types of flashcards')}
+            {this.renderHeading('Two Types of Flashcards')}
 
             <FakeFlashcards/>
           </section>
@@ -86,7 +79,6 @@ class Page_articles_welcome extends React.Component {
             <section className="article-section sign-in">
               {this.renderHeading('Welcome')}
               <SignInButtons text="Sign In With"/>
-              <img src={heartImage} alt="heart"/>
             </section>
           }
 

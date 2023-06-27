@@ -14,7 +14,7 @@
   }
   > .ql-toolbar{
     height: 30px;
-    overflow-y: scroll;
+    //overflow-y: scroll;
   }
   > .ql-container > .ql-editor{
     min-height: 70px;
@@ -28,19 +28,19 @@
     word-wrap: break-word;
     word-break: break-word;
 
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans', sans-serif;
 
     // color: rgb(206, 199, 245);
     // We need !important-s because we have to override styles copypasted by users
     code, span, em, strong, b, a, sup, sub, blockquote, mark, p, ul, ol, u{
-      color: rgb(238, 236, 246) !important;
+      color: $black !important;
       background: rgba(0, 0, 0, 0) !important;
     }
 
     strong{
       font-family: inherit;
       font-weight: 100;
-      color: $green !important;
+      color: $orange !important;
     }
     em{
       color: rgb(171, 127, 242) !important;
@@ -80,9 +80,9 @@
     ol{ padding-left: 21px; }
     blockquote{
       font-size: 14px;
-      border-left: 1px solid rgba(206, 199, 245, 0.62);
-      color: rgb(238, 236, 246) !important;
-      background: rgba(21, 23, 45, 0.38) !important;
+      border-left: 2px solid rgb(255, 157, 0);
+      color: $black !important;
+      background: rgba(206, 206, 206, 0.3) !important;
       padding: 4px 16px;
     }
 
@@ -97,6 +97,6 @@
     font-style: normal;
     padding-right: 10px;
     line-height: 20px;
-    color: rgb(172, 181, 218);
+    color: rgb(255, 203, 122);
   }
 }

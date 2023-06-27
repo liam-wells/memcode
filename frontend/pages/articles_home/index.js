@@ -16,7 +16,7 @@ class Page_articles_home extends React.Component {
       <article className="standard-article-formatting">
         <div className="container">
           <section className="article-headings">
-            <h1>Welcome to Memcode.</h1>
+            <h1>Welcome to Coto Cards.</h1>
 
             <h2>
               Lightweight <mark>spaced repetition</mark>-based learning site.
@@ -31,7 +31,7 @@ class Page_articles_home extends React.Component {
               To keep it in your long term memory, we ask you to review the flashcards you’re starting to forget.
             </p>
 
-            <b>Two types of flashcards:</b>
+            <b>Two Types of Flashcards:</b>
             <ol>
               <li>
                 Type in an answer and rate yourself according to your memory recall

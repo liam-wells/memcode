@@ -3,17 +3,19 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Franklin|Montserrat:100,200,300,400,500,600,700&display=swap');
 
 :local(main.main){
+  background: url(https://cdn.discordapp.com/attachments/1121319791324561561/1122700506939269160/cotoBGdim2.png);
+  background-position: center -370px;
+  background-color: $color-main-2;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: initial;
+
   header .sign-in-links{
     background: none !important;
   }
   header{
-    background: rgb(251, 174, 60) !important;
-  }
-
-  @media(max-width: 930px){
-    .github-ribbon{
-      display: none;
-    }
+    background: $color-main-1 !important;
+    border-bottom: 2px, rgba(243, 243, 244, 255);
   }
   
   .standard-article-formatting{
@@ -44,19 +46,27 @@
   section.article-headings{
     text-align: center;
     margin-bottom: 170px;
+    //background: linear-gradient(
+      //rgba(0, 0, 0, 0.4), 
+      //rgba(0, 0, 0, 0.4)
+      //),
+      //url("https://images.unsplash.com/photo-1545427782-c1ba83cbb692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
     h1{
       font-size: 60px;
       line-height: 86px;
+      font-weight: 500;
+      color: white;
     }
     h2.subtitle{
       margin: 0;
       margin-bottom: 100px;
       margin-top: 35px;
-      // color: rgb(201, 195, 246);
+      color: white;
     }
     h2.more{
       line-height: 34px;
       margin-top: 50px;
+      color: white;
     }
     .button{
       display: inline-flex;
@@ -73,7 +83,7 @@
       li{
         width: 50%;
         border-radius: 5px;
-        background: rgba(136, 125, 220, 0.15);
+        background: white;
 
         section.problem{
           min-height: 150px;
@@ -97,9 +107,10 @@
           padding: 10px 20px;
           border-top-right-radius: 5px;
           border-top-left-radius: 5px;
-          // color: $purple;
+          border-bottom: 1px solid rgb(234, 234, 234);
+          color: $black;
           font-weight: 600;
-          font-family: 'Libre Franklin', sans-serif;
+          font-family: $body-font;
           font-size: 18px;
         }
 
@@ -107,22 +118,25 @@
           padding: 10px 20px;
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;
+          color: white;
         }
       }
+      // left card example
       li.separate{
         margin-right: 10px;
-        div.instruction.-top{ background: rgb(55, 51, 94); }
-        div.instruction.-bottom{ background: rgba(55, 51, 94, 0.5); }
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+        div.instruction.-bottom{ background: $orange; }
       }
+      // right card example
       li.inline{
         margin-left: 10px;
-        div.instruction.-top{ background: rgb(176, 74, 13); }
-        div.instruction.-bottom{ background: rgba(55, 51, 94, 0.5); }
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
+        div.instruction.-bottom{ background: $orange; }
 
         input.answer-input{
           cursor: pointer !important;
           &:hover{
-            background: rgba(136, 125, 220, 0.16);
+            background: rgba(251, 176, 59, 0.16);
           }
         }
       }

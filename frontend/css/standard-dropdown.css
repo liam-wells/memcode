@@ -33,9 +33,9 @@
   li{
     border-bottom: 1px solid rgba(255, 255, 255, 0.01);
     &:last-child{ border-bottom: none; }
-    mark{ color: $purple; }
+    mark{ color: $orange; }
     &:hover{
-      color: $purple;
+      color: $orange;
     }
   }
 }

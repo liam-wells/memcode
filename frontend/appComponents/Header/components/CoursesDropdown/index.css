@@ -11,7 +11,7 @@
 
     .title{
       letter-spacing: 0.3px;
-      font-family: "Roboto";
+      font-family: "Noto Sans", sans-serif;
       font-weight: 100;
       mark{
         color: $purple;

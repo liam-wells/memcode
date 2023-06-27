@@ -15,7 +15,7 @@
   }
   > div.amount-of-unread-notifications,
   &.-there-are-unread-notifications i {
-    color: white;
+    color: black;
   }
 
   &.-there-are-unread-notifications{

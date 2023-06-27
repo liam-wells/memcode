@@ -1,16 +1,16 @@
 $purple: rgb(170, 160, 247);
 // $purple: rgb(160, 187, 247);
 $blue: rgb(21, 23, 58);
-$orange: rgba(251, 176, 59, 255);
-
+$orange: rgb(251, 176, 59);
+$black: rgb(41, 41, 41);
 $green: rgb(56, 190, 155);
 
-$body-font: 'Open Sans';
-$heading-font: 'Open Sans';
+$body-font: 'Noto Sans', sans-serif;
+$heading-font: 'Noto Sans', sans-serif;
 
-$color-main-1: rgb(251, 174, 60); // header
-$color-main-2: rgb(255, 255, 255); // bg
-$color-main-3: rgb(255, 255, 255); // course
+$color-main-1: white; // header
+$color-main-2: whitesmoke; // bg
+$color-main-3: white; // course
 $faint-blue: rgb(53, 65, 105);
 $not-so-faint-blue: rgb(90, 102, 141);
 
@@ -29,8 +29,8 @@ $course-in-list-height-mobile: 104px;
 // blue he offered for learn
 // $learn-button-color: rgb(31, 27, 134);
 
-$learn-button-color: rgb(33, 165, 130);
-$review-button-color: rgb(212, 85, 18);
+$learn-button-color: $green;
+$review-button-color: $orange;
 $test-drive-button-color: rgb(236, 236, 133);
 
 // $learn-button-color: rgb(8, 87, 185);

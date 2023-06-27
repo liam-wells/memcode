@@ -42,7 +42,7 @@
     &.-checked,
     &.-checked > section.checkbox{
       // rgb(139 34 56)
-      background-color: rgb(212, 86, 15);
+      background-color: rgb(255, 198, 117);
       transition-property: background-color;
       transition-duration: 100ms;
     }
@@ -67,7 +67,7 @@
   }
   section.problem{
     .ql-editor:focus{
-      background: rgb(40, 45, 88);
+      background: white;
     }
 
     .quill{

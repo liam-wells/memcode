@@ -21,7 +21,7 @@ section.problem{
   }
 
   // Css for particular flashcard types
-  $answer-background: rgba(45, 245, 83, 0.9);
+  $answer-background: rgba(251, 176, 59, 0.9);
   &.-withInlinedAnswers{
     mark.answer{
       border: 2px solid $answer-background;
@@ -29,12 +29,12 @@ section.problem{
       border-radius: 2px;
     }
     .ql-editor{
-      border: 2px solid rgb(170, 160, 247);
+      border: 2px solid $orange;
     }
   }
   &.-withSeparateAnswer{
     .first-column .ql-editor{
-      border: 2px solid rgb(170, 160, 247);
+      border: 2px solid $orange;
     }
     .second-column .ql-editor{
       border: 2px solid $answer-background;

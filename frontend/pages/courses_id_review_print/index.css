@@ -10,7 +10,7 @@
     }
     .title{
       color: black;
-      font-family: 'Open Sans';
+      font-family: 'Noto Sans', sans-serif;
     }
     .buttons{
       display: none !important;

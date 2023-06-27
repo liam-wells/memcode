@@ -12,7 +12,7 @@
 
   &.-focusable-link{
     &:hover, &:focus{
-      background: rgb(32, 35, 73);
+      background: white;
       a{
         opacity: 1;
         text-shadow: 0 0 6px rgba(243, 243, 243, 0.5);
@@ -27,7 +27,7 @@
     width: 100%;
     background: rgba(86, 91, 130, 0.08);
     text-align: right;
-    color: white;
+    color: black;
     opacity: 0.8;
     &:hover{
       opacity: 1;
@@ -79,7 +79,8 @@
         }
       }
       > section.amount-footer{
-        background: rgba(86, 91, 130, 0.08);
+        color: white !important;
+        background: rgb(200, 0, 0);
         position: absolute;
         bottom: 0;
         left: 0; right: 0;
@@ -103,9 +104,9 @@
           background: $review-button-color;
         }
         &.-next-due{
-          color: white;
+          color: black;
           i.timer-icon{
-            color: $purple;
+            color: white;
             font-size: 14px;
             padding-right: 5px;
           }

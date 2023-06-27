@@ -1,7 +1,9 @@
 @import 'css/variables';
 
 :local(.header){
-  background: rgb(251, 174, 60);
+  // header style
+  background: $color-main-1;
+  border-bottom: 2px solid rgb(243, 243, 243);
   
   .my-courses-toggler{
     .link.courses{
@@ -39,9 +41,17 @@
     }
   }
 
+  // logo text style
   a.logo{
     display: flex;
     align-items: center;
+    color: black;
+    font-weight: 400;
+
+    // logo image style
+    img.cotoBubble{
+      width: 60px;
+    }
 
     // position: relative;
     // top: 5px;
@@ -58,6 +68,7 @@
     }
   }
 
+  // navigation bar including courses, create, and contact
   nav{
     display: flex;
     align-items: center;
@@ -66,19 +77,18 @@
     .button{
       margin-right: 10px;
       height: 31px;
-      font-size: 11px;
-
-      text-transform: uppercase;
-      font-size: 11px;
+      font-weight: 400;
+      text-transform: none;
+      font-size: 14px;
       min-width: 100px;
     }
   }
 
   .tippy-box{
-    background-color: rgb(33, 36, 73);
+    background-color: white;
 
     .tippy-arrow{
-      color: rgb(33, 36, 73);
+      color: white;
     }
   }
 
@@ -155,10 +165,11 @@
     }
   }
 
+  // header container style on desktop
   .container.-desktop{
     display: flex;
     justify-content: space-between;
-    height: 55px;
+    height: 70px;
     > div.nav-and-current-user{
       display: flex;
     }

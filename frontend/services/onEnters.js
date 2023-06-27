@@ -41,7 +41,7 @@ const signIn = (Component) => {
 
 const requireAdmin = (Component) => {
   // introduce ifAdmin=true later
-  if (getCurrentUser() && getCurrentUser().email === 'lakesare@gmail.com') {
+  if (getCurrentUser() && getCurrentUser().email === 'liamwells538@gmail.com') {
     return (props) => <Component {...props}/>;
   } else {
     return (props) => <Redirect to="/please-sign-in" {...props}/>;

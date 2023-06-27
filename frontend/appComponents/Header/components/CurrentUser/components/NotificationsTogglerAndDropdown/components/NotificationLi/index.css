@@ -27,7 +27,7 @@
     > div.title_and_content_and_created-at{
       > div.content{
         span.learner-username{
-          color: white;
+          color: black;
         }
       }
     }
@@ -37,7 +37,7 @@
     > div.title_and_content_and_created-at{
       > div.content{
         span.rater-username{
-          color: white;
+          color: black;
         }
       }
     }
@@ -84,7 +84,7 @@
     }
     > div.created-at{
       font-size: 11px;
-      color: rgb(106, 126, 171);
+      color: $orange;
     }
   }
   > button.mark-as-read-on-unread-button{

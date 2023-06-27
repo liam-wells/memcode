@@ -16,7 +16,7 @@
         top: 9px;
         left: 11px;
         font-size: 19px;
-        color: white;
+        color: black;
       }
       input{
         width: 100%;
@@ -28,14 +28,14 @@
       font-size: 13px;
       border-radius: 2px;
       input{
-        background: transparent;
-        color: white;
+        background: white !important;
+        color: black;
         transition-duration: 200ms;
         transition-property: background;
-        font-family: 'Open Sans';
+        font-family: 'Noto Sans', sans-serif;
         &::placeholder{
           color: white;
-          font-family: 'Open Sans';
+          font-family: 'Noto Sans', sans-serif;
         }
         border-radius: 4px;
         background: #e2e4f008;

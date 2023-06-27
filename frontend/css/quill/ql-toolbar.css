@@ -3,15 +3,15 @@
 .quill > .ql-toolbar{
   border: none;
   padding: 2px 10px;
-  background: rgb(34, 38, 74);
+  background: $black;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   button:hover, button.ql-active{
     .ql-stroke{
-      stroke: $green !important;
+      stroke: $orange !important;
     }
     .ql-fill{
-      fill: $green !important;
+      fill: $orange !important;
     }
   }
   .ql-formats{
@@ -48,11 +48,11 @@
     font-size: 11px;
   }
   .shortcut{
-    color: $green;
+    color: $orange;
     font-size: 11px;
   }
   .instruction{
-    color: $purple;
+    color: $orange;
     font-size: 10px;
   }
 }

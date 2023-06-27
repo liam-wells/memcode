@@ -1,10 +1,10 @@
 @import 'css/variables';
 
 :local(.section){
-  $purple-question-border: 3px solid rgb(170, 160, 247);
-  $green-answer-border: 3px solid rgb(160, 247, 200);
-  $green-answer-box-shadow: 0px 0px 6px 2px rgba(143, 242, 124, 0.39);
-  $purple-question-box-shadow: 0px 0px 6px 2px rgba(137, 94, 241, 0.62);
+  $orange-question-border: 2px solid $orange;
+  $green-answer-border: 2px solid $green;
+  // $green-answer-box-shadow: 0px 0px 6px 2px rgba(143, 242, 124, 0.39);
+  // $orange-question-box-shadow: 0px 0px 6px 2px rgba(41, 41, 41, 0.62);
 
   section.problem{
     max-width: 1210px;
@@ -16,7 +16,7 @@
 
     &.-withInlinedAnswers{
       .ql-editor{
-        box-shadow: $purple-question-box-shadow;
+        box-shadow: none;
       }
       input.answer-input{
         width: 120px;
@@ -29,7 +29,7 @@
         border-radius: 2px;
         &:focus{ outline: none; }
         &[data-answered='right']{
-          box-shadow: $green-answer-box-shadow;
+          box-shadow: none;
           border: $green-answer-border;
           border-width: 2px;
           background: rgb(68, 245, 149) !important;
@@ -40,29 +40,30 @@
           color: #f9637d !important;
         }
         &[data-answered='waiting']{
-          color: rgb(206, 199, 245);
+          color: black;
           // font-weight: 500;
           // border: 2px solid #FFEB3B;
-          border: 2px solid $purple;
+          border: 2px solid whitesmoke;
         }
       }
     }
     &.-withSeparateAnswer{
       flex-wrap: wrap;
       justify-content: flex-end;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.3);
 
       > div.question-and-answer{
         width: 100%;
         display: flex;
         .question.first-column{
           .ql-editor{
-            box-shadow: $purple-question-box-shadow;
-            border: $purple-question-border;
+            box-shadow: none;
+            border: $orange-question-border;
           }
         }
         .answer.second-column{
           .ql-editor{
-            box-shadow: $green-answer-box-shadow;
+            box-shadow: none;
             border: $green-answer-border;
           }
         }
@@ -84,9 +85,9 @@
           align-items: center;
           cursor: pointer;
 
-          box-shadow: $green-answer-box-shadow;
+          box-shadow: none;
           border: $green-answer-border;
-          color: rgb(160, 247, 200);
+          color: $green;
         }
       }
 
@@ -97,11 +98,11 @@
           margin-top: 20px;
           // placeholder!
           .ql-editor.ql-blank::before{
-            color: rgba(132, 155, 249, 0.48);
+            color: rgba(41, 41, 41, 0.48);
           }
           .ql-editor{
-            border: none !important;
-            background: rgb(34, 38, 74);
+            border: 1px solid $black !important;
+            background: white;
             min-height: 54px;
           }
           .ql-toolbar{
@@ -114,7 +115,7 @@
           &:focus-within{
             .ql-toolbar{
               height: 31px;
-              background: rgb(22, 25, 51);
+              background: $black;
               padding-top: 2px;
               padding-bottom: 2px;
             }
@@ -141,7 +142,7 @@
 
   button.reveal{
     color: rgba(251, 250, 242, 0.85);
-    background: rgb(43, 47, 82);
+    background: $orange;
     max-width: 150px;
     margin: 0 auto;
     margin-top: 60px;

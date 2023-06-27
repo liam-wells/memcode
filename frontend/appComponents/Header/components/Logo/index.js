@@ -1,8 +1,7 @@
 import orFalse from '~/services/orFalse';
 import Urls from '~/services/Urls';
 import { Link } from 'react-router-dom';
-
-// import memcodeLogo from './halloween.png';
+import cotoLogo from './coto.png';
 
 class Logo extends React.Component {
   static propTypes = {
@@ -22,9 +21,11 @@ class Logo extends React.Component {
     }
   }
 
+  // render Coto logo and text on header
   render = () =>
     <Link className="logo" to={this.getLink()}>
-      MEMCODE
+      <img className="cotoBubble" src="https://cdn.discordapp.com/attachments/1121319791324561561/1123069844523327568/coto.png"></img>
+      Coto Cards
     </Link>
 }
 

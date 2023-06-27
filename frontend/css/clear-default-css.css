@@ -31,7 +31,7 @@ main{
   &.-in-normal-font{
     .quill{
       pre.ql-syntax, code{
-        font-family: 'Open Sans';
+        font-family: 'Noto Sans', sans-serif;
       }
     }
   }
@@ -50,7 +50,6 @@ a{
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  color: $body-color;
 }
 label{
   font-weight: 300;

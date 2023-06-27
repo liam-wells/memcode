@@ -66,9 +66,9 @@ class UserInfo extends React.Component {
 
   renderStats = (stats) => {
     // const max = skills[0].nOfFlashcards;
-    const greenLong = '#09cc54';
-    const greenMiddle = '#6fca92';
-    const greenShort = '#9cc4ab';
+    const orangeLong = '#fbb03b';
+    const orangeMiddle = '#ffcb7a';
+    const orangeShort = '#fce3bb';
 
     const data = {
       labels: [
@@ -81,11 +81,11 @@ class UserInfo extends React.Component {
         data: stats.easiness.longTerm === 0 && stats.easiness.middleTerm === 0 && stats.easiness.shortTerm === 0 ?
           [0, 0, 1] :
           [stats.easiness.longTerm, stats.easiness.middleTerm, stats.easiness.shortTerm],
-        backgroundColor: [greenLong, greenMiddle, greenShort],
+        backgroundColor: [orangeLong, orangeMiddle, orangeShort],
         hoverOffset: 0,
         borderColor: 'rgba(255, 255, 255, 1)',
         borderWidth: 1,
-        hoverBackgroundColor: [greenLong, greenMiddle, greenShort]
+        hoverBackgroundColor: [orangeLong, orangeMiddle, orangeShort]
       }],
       // responsive: true,
       // maintainAspectRatio: false
@@ -97,7 +97,7 @@ class UserInfo extends React.Component {
         Math.round((stats.easiness[easinessFor] / stats.nOfProblemsLearned) * 100, 2);
 
     return <div className="stats">
-      <SettingsModal toggler={<button type="button" className="settings-button button -white">Settings</button>} />
+      <SettingsModal toggler={<button type="button" className="settings-button button -orange">Settings</button>} />
 
       <h1>Progress</h1>
 
@@ -116,15 +116,15 @@ class UserInfo extends React.Component {
               {stats.nOfProblemsLearned} flashcards learned:
               <ul className="memory-levels">
                 <li>
-                  <div className="square" style={{ background: greenLong }}/>
+                  <div className="square" style={{ background: orangeLong }}/>
                   {toPercent('longTerm')}% in long-term memory
                 </li>
                 <li>
-                  <div className="square" style={{ background: greenMiddle }}/>
+                  <div className="square" style={{ background: orangeMiddle }}/>
                   {toPercent('middleTerm')}% in middle-term memory
                 </li>
                 <li>
-                  <div className="square" style={{ background: greenShort }}/>
+                  <div className="square" style={{ background: orangeShort }}/>
                   {toPercent('shortTerm')}% freshly learned
                 </li>
               </ul>
